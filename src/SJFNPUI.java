@@ -106,7 +106,7 @@ public class SJFNPUI extends Frame {
 
         b3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(t1<=t+1){
+                if(t1<=t){
                     sjfnp.display(sjfnp.a,sjfnp.b,sjfnp.c,t1);
                     lb2.setText(sjfnp.getGnat());
                     lb3.setText(sjfnp.getProcess());
