@@ -138,13 +138,8 @@ public class PriPUI extends Frame {
         prinp=new PriP(n); 
         t1=0;
         
-        //String s=new String();
         for(int i=0;i<n;i++){
-            //System.out.print(i+" "+n);
-
-            System.out.print("enter job enter time:");
             prinp.a[i][0]=Integer.parseInt(tfArrival[i].getText());
-            System.out.print("enter job burst time:");
             prinp.a[i][3]=prinp.a[i][1]=Integer.parseInt(tfBurst[i].getText());
             prinp.a[i][4]=Integer.parseInt(tfPriority[i].getText());
             prinp.t+=prinp.a[i][1];

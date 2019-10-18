@@ -15,7 +15,6 @@ public class PriNP{
             System.out.print(c[i]+" ");
             else System.out.print(" - ");
         }System.out.print(" \n");
-        //System.out.print(" f "+ sj +"\n");
         if(p<t){
             for(int k=0;k<n;k++)
                 if(a[k][0]==p)b[q++]=k+1;
@@ -34,8 +33,7 @@ public class PriNP{
                 if(a[b[i]-1][4]<a[b[sj]-1][4]){
                     sj=i;
                 }
-            }//System.out.print(" fr "+ sj +"\n");
-            //for(int i=0;i<n;i++)System.out.print(b[i]);
+            }
             if(b[sj]!=0){
             if(r<t){
                 c[r++]=b[sj];
@@ -62,8 +60,6 @@ public class PriNP{
             b[sj]=0;
                 sj=-1;
             }
-            //if(j<n)
-            //a[b[j]-1][1]--;
         }
         
     }
@@ -71,14 +67,10 @@ public class PriNP{
         t=q=r=s=0;j=0;
         sj=-1;
         this.n=n;
-        //Scanner in = new Scanner(System.in);
-        //n=Integer.parseInt(in.nextLine());System.out.print(n);
         System.out.print(n);
-        //for(int i=0;i<n;i++) System.out.print(a[i][0]+" "+a[i][1]+" "+a[i][2]+" "+a[i][3]+" \n");
        a=new int[n][5];
         
         b=new int[n];
-        //for(int i=0;i<n;i++)b[i]=0;
         
     }
     public String getGnat(){

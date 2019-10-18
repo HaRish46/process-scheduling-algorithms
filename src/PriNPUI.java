@@ -109,8 +109,6 @@ public class PriNPUI extends Frame {
                           System.exit(0);
             }
           });
-
-
         b3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if(t1<=t+1){
@@ -138,13 +136,8 @@ public class PriNPUI extends Frame {
         prinp=new PriNP(n); 
         t1=0;
         
-        //String s=new String();
         for(int i=0;i<n;i++){
-            //System.out.print(i+" "+n);
-
-            System.out.print("enter job enter time:");
             prinp.a[i][0]=Integer.parseInt(tfArrival[i].getText());
-            System.out.print("enter job burst time:");
             prinp.a[i][3]=prinp.a[i][1]=Integer.parseInt(tfBurst[i].getText());
             prinp.a[i][4]=Integer.parseInt(tfPriority[i].getText());
             prinp.t+=prinp.a[i][1];

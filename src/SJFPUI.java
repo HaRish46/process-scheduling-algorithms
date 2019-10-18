@@ -132,13 +132,9 @@ public class SJFPUI extends Frame {
         sjfnp=new SJFP(n); 
         t1=0;
         
-        //String s=new String();
         for(int i=0;i<n;i++){
-            //System.out.print(i+" "+n);
 
-            System.out.print("enter job enter time:");
             sjfnp.a[i][0]=Integer.parseInt(tfArrival[i].getText());
-            System.out.print("enter job burst time:");
             sjfnp.a[i][3]=sjfnp.a[i][1]=Integer.parseInt(tfBurst[i].getText());
             sjfnp.t+=sjfnp.a[i][1];
             

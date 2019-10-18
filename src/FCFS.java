@@ -60,20 +60,9 @@ public class FCFS{
     FCFS(int n){
         this.n=n;
         t=q=r=s=0;j=0;
-        //System.out.print("enter total number of jobs:");
-        //Scanner in = new Scanner(System.in);
-        //n=Integer.parseInt(in.nextLine());System.out.print(n);
         a=new int[n][4];
-        
-        for(int i=0;i<n;i++) System.out.print(a[i][0]+" "+a[i][1]+" "+a[i][2]+" "+a[i][3]+" \n");
-
-        //int[] h=new int[t];
-       
-        //for(int i=0;i<t;i++)System.out.print(h[i]);
-
         b=new int[n];
         
         System.out.print("\n"+t);
-        //for(int i=0;i<n;i++) System.out.print(a[i][0]+" "+a[i][1]+" "+a[i][2]+" "+a[i][3]+" \n");
     }
 }

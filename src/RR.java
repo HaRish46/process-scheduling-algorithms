@@ -33,7 +33,7 @@ public class RR {
 			{
 				break;
 			}
-			s1+=" | "+(t+1);//System.out.print(s+"\n");
+			s1+=" | "+(t+1);
 			if(bt[t]-tq<0)
 			{
 				bt[t]=0;
@@ -44,11 +44,10 @@ public class RR {
 				i++;
 			}
 		}
-		//System.out.println("process completed");
 		
 	}
 	public int pickProcess(int l,int temp) {
-		int i=0,t=0,q;
+		int i=0,q;
 		for(i=0;i<n;i++)
 		{
 			if((at[i]<=l && s[i]==0) && i!=temp)
@@ -64,7 +63,6 @@ public class RR {
 		}
 		//finding shortest
 		q=0;
-		int c=0;
 		for(i=0;i<n;i++)
 		{
 			if(bt[i]!=0)
